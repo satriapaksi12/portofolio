@@ -145,6 +145,24 @@
       text-decoration: none;
     }
 
+    .cert-skills {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .cert-skills span {
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      background: rgba(99, 102, 241, .12);
+      color: #6366f1;
+      border: 1px solid rgba(99, 102, 241, .2);
+    }
+
+
     .nav-links {
       display: flex;
       gap: 2.5rem;
@@ -819,6 +837,120 @@
       transform: translateY(-2px);
     }
 
+    /* ───────── GALLERY BASE ───────── */
+    #gallery {
+      background: transparent;
+    }
+
+    /* GRID */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    /* CARD */
+    .gallery-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 14px;
+      aspect-ratio: 4/3;
+      background: var(--navy-800);
+    }
+
+    /* SLIDER WRAPPER */
+    .gallery-slider {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    /* TRACK */
+    .slide-track {
+      display: flex;
+      height: 100%;
+      transition: transform .5s ease;
+    }
+
+    /* IMAGE */
+    .slide-track img {
+      width: 100%;
+      height: 100%;
+      flex: 0 0 100%;
+      object-fit: cover;
+      filter: brightness(.75);
+    }
+
+    /* HOVER EFFECT */
+    .gallery-card:hover img {
+      filter: brightness(.55);
+    }
+
+    /* NAV BUTTON */
+    .nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 5;
+      background: rgba(0, 0, 0, .4);
+      border: none;
+      color: white;
+      font-size: 20px;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+
+    .nav.prev {
+      left: 8px;
+    }
+
+    .nav.next {
+      right: 8px;
+    }
+
+    /* OVERLAY */
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(2, 9, 23, .95), transparent);
+      display: flex;
+      align-items: flex-end;
+      padding: 1rem;
+    }
+
+    .gallery-top-bar {
+      position: absolute;
+      top: .8rem;
+      left: .8rem;
+      right: .8rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .gallery-badge {
+      font-size: .6rem;
+      padding: .3rem .7rem;
+      border-radius: 999px;
+      background: rgba(0, 0, 0, .4);
+      color: #5b9ef5;
+    }
+
+    .gallery-num {
+      font-size: .6rem;
+      opacity: .5;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+
     /* ── Footer ── */
     footer {
       position: relative;
@@ -1264,6 +1396,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#gallery">Events <span>&amp; Activities</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -1335,6 +1468,7 @@
       <button class="tab-btn" data-tab="internship">Internship</button>
       <button class="tab-btn" data-tab="work">Work</button>
       <button class="tab-btn" data-tab="teaching">Teaching</button>
+      <button class="tab-btn" data-tab="certification">Certification</button>
     </div>
 
     <!-- Education -->
@@ -1438,6 +1572,223 @@
             concepts, SQL queries, and database design through guided lab sessions and structured exercises.
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Certification -->
+    <div class="tab-panel" id="tab-certification">
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">2023</div>
+          <span class="tl-badge">Professional Certification</span>
+
+          <div class="tl-title">
+            Sertifikat Kompetensi Skema Pemrogram (Programmer)
+          </div>
+
+          <div class="tl-org">
+            Badan Nasional Sertifikasi Profesi (BNSP)
+          </div>
+
+          <div class="tl-desc">
+            Certified professional competency in software development, programming,
+            algorithm implementation, database management, and application development
+            based on national competency standards.
+          </div>
+
+          <div class="cert-skills">
+            <span>Programming</span>
+            <span>Software Development</span>
+            <span>Database</span>
+            <span>Problem Solving</span>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">Aug 2023</div>
+          <span class="tl-badge">Course Certificate</span>
+
+          <div class="tl-title">
+            Belajar Dasar Manajemen Proyek
+          </div>
+
+          <div class="tl-org">
+            Dicoding Indonesia
+          </div>
+
+          <div class="tl-desc">
+            Learned fundamental project management concepts including project
+            planning, task organization, team collaboration, risk management,
+            and project execution.
+          </div>
+
+          <div class="cert-skills">
+            <span>Project Management</span>
+            <span>Planning</span>
+            <span>Collaboration</span>
+            <span>Leadership</span>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">Jun 2023</div>
+          <span class="tl-badge">Networking Certification</span>
+
+          <div class="tl-title">
+            MikroTik Certified Network Associate (MTCNA)
+          </div>
+
+          <div class="tl-org">
+            MikroTik
+          </div>
+
+          <div class="tl-desc">
+            Demonstrated competency in network configuration, routing, wireless
+            networking, security fundamentals, and MikroTik RouterOS administration.
+          </div>
+
+          <div class="cert-skills">
+            <span>Networking</span>
+            <span>RouterOS</span>
+            <span>Routing</span>
+            <span>Wireless</span>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">Sep 2021</div>
+          <span class="tl-badge">Cisco Certification</span>
+
+          <div class="tl-title">
+            Introduction to IoT
+          </div>
+
+          <div class="tl-org">
+            Cisco Networking Academy
+          </div>
+
+          <div class="tl-desc">
+            Learned Internet of Things concepts, connected devices, sensors,
+            network communication, and the impact of IoT technologies across industries.
+          </div>
+
+          <div class="cert-skills">
+            <span>IoT</span>
+            <span>Sensors</span>
+            <span>Networking</span>
+            <span>Automation</span>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">Jun 2021</div>
+          <span class="tl-badge">Oracle Certification</span>
+
+          <div class="tl-title">
+            Java Fundamentals
+          </div>
+
+          <div class="tl-org">
+            Oracle
+          </div>
+
+          <div class="tl-desc">
+            Gained foundational knowledge of Java programming including object-oriented
+            programming, data structures, control flow, and application development.
+          </div>
+
+          <div class="cert-skills">
+            <span>Java</span>
+            <span>OOP</span>
+            <span>Algorithms</span>
+            <span>Programming</span>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">Feb 2021</div>
+          <span class="tl-badge">Cisco Certification</span>
+
+          <div class="tl-title">
+            CCNA Routing and Switching: Introduction to Networks
+          </div>
+
+          <div class="tl-org">
+            Cisco Networking Academy
+          </div>
+
+          <div class="tl-desc">
+            Acquired foundational networking skills including network architecture,
+            IP addressing, switching, routing, and troubleshooting techniques.
+          </div>
+
+          <div class="cert-skills">
+            <span>CCNA</span>
+            <span>Routing</span>
+            <span>Switching</span>
+            <span>TCP/IP</span>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">2021</div>
+          <span class="tl-badge">Programming Course</span>
+
+          <div class="tl-title">
+            Command Line
+          </div>
+
+          <div class="tl-org">
+            Progate
+          </div>
+
+          <div class="tl-desc">
+            Learned command line fundamentals for file management, navigation,
+            automation, and development workflows.
+          </div>
+
+          <div class="cert-skills">
+            <span>CLI</span>
+            <span>Linux</span>
+            <span>Terminal</span>
+            <span>Shell</span>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">2021</div>
+          <span class="tl-badge">Programming Course</span>
+
+          <div class="tl-title">
+            Git
+          </div>
+
+          <div class="tl-org">
+            Progate
+          </div>
+
+          <div class="tl-desc">
+            Learned version control fundamentals using Git, including branching,
+            merging, collaboration workflows, and source code management.
+          </div>
+
+          <div class="cert-skills">
+            <span>Git</span>
+            <span>Version Control</span>
+            <span>GitHub</span>
+            <span>Collaboration</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -2309,6 +2660,274 @@
     </div>
   </section>
 
+  <!-- GALLERY -->
+  <section id="gallery">
+    <p class="section-label">// 04. events</p>
+    <h2 class="section-title">Events <span>&amp; Activities</span></h2>
+    <div class="section-divider"></div>
+
+    <div class="gallery-grid">
+
+      <!-- CARD 10-->
+      <div class="gallery-card">
+        <div class="gallery-slider">
+          <div class="slide-track">
+            <img src="img/tarakan/20251220_135001.jpg" alt="">
+            <img src="img/tarakan/20251219_084629.jpg" alt="">
+            <img src="img/tarakan/20251219_110406.jpg" alt="">
+            <img src="img/tarakan/20251219_132439.jpg" alt="">
+            <img src="img/tarakan/20251220_134910.jpg" alt="">
+
+
+          </div>
+        </div>
+        <button class="nav prev" onclick="moveSlide(this, -1)">‹</button>
+        <button class="nav next" onclick="moveSlide(this, 1)">›</button>
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <div class="gallery-date">19 Desember 2025</div>
+            <div class="gallery-event">Monev Aplikasi SIMTUGU PLPP - Kemendikdasmen</div>
+            <div class="gallery-place">📍 Tarakan, Kalimantan Utara</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 8-->
+      <div class="gallery-card">
+        <div class="gallery-slider">
+          <div class="slide-track">
+            <img src="img/gpk/1764316923387.jpg" alt="">
+            <img src="img/gpk/1764316923239.jpg" alt="">
+            <img src="img/gpk/1764316923277.jpg" alt="">
+            <img src="img/gpk/1764316923363.jpg" alt="">
+            <img src="img/gpk/1764316923555.jpg" alt="">
+            <img src="img/gpk/1764316925043.jpg" alt="">
+
+          </div>
+        </div>
+        <button class="nav prev" onclick="moveSlide(this, -1)">‹</button>
+        <button class="nav next" onclick="moveSlide(this, 1)">›</button>
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <div class="gallery-date">28 Oktober 2025</div>
+            <div class="gallery-event">Kegiatan Aplikasi SIM GPK - Kemendikdasmen</div>
+            <div class="gallery-place">📍 Batam, Kepulauan Riau</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 7 -->
+      <div class="gallery-card">
+        <div class="gallery-slider">
+          <div class="slide-track">
+            <img src="img/medan/1761320770966.jpg" alt="">
+            <img src="img/medan/1761320770887.jpg" alt="">
+            <img src="img/medan/1761320770902.jpg" alt="">
+
+          </div>
+        </div>
+        <button class="nav prev" onclick="moveSlide(this, -1)">‹</button>
+        <button class="nav next" onclick="moveSlide(this, 1)">›</button>
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <div class="gallery-date">18 September 2025</div>
+            <div class="gallery-event">Kegiatan Aplikasi SIMLAT PAUD - Kemendikdasmen</div>
+            <div class="gallery-place">📍 Medan, Sumatra Utara</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 11-->
+      <div class="gallery-card">
+        <div class="gallery-slider">
+          <div class="slide-track">
+            <img src="img/uns/IMG_1471.JPG" alt="">
+            <img src="img/uns/IMG_1434.JPG" alt="">
+
+
+
+          </div>
+        </div>
+        <button class="nav prev" onclick="moveSlide(this, -1)">‹</button>
+        <button class="nav next" onclick="moveSlide(this, 1)">›</button>
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <div class="gallery-date">26 Februari 2025</div>
+            <div class="gallery-event">FGD D3TI UNS - Universitas Sebelas Maret</div>
+            <div class="gallery-place">📍 Solo, Jawa Tengah</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 9-->
+      <div class="gallery-card">
+        <div class="gallery-slider">
+          <div class="slide-track">
+            <img src="img/perlindungan/1761320954821.jpg" alt="">
+            <img src="img/perlindungan/1761320954810.jpg" alt="">
+
+
+          </div>
+        </div>
+        <button class="nav prev" onclick="moveSlide(this, -1)">‹</button>
+        <button class="nav next" onclick="moveSlide(this, 1)">›</button>
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <div class="gallery-date">20 Januari 2025</div>
+            <div class="gallery-event">Paparan Sistem Perlindungan GTK - Kemendikdasmen</div>
+            <div class="gallery-place">📍 Jakarta Selatan, DKI Jakarta</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="gallery-card">
+        <div class="gallery-slider">
+          <div class="slide-track">
+            <img src="img/bali/IMG-20241212-WA0032.jpg" alt="">
+            <img src="img/bali/IMG-20241212-WA0038.jpg" alt="">
+
+          </div>
+        </div>
+        <button class="nav prev" onclick="moveSlide(this, -1)">‹</button>
+        <button class="nav next" onclick="moveSlide(this, 1)">›</button>
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <div class="gallery-date">12 Desember 2024</div>
+            <div class="gallery-event">Sosialisasi Aplikasi KPD - Kemendikdasmen</div>
+            <div class="gallery-place">📍 Uluwatu, Bali</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="gallery-card">
+        <div class="gallery-slider">
+          <div class="slide-track">
+            <img src="img/sisupar/LTR_9671.JPG" alt="">
+            <img src="img/sisupar/LTR_9465.jpg" alt="">
+            <img src="img/sisupar/LTR_9586.JPG" alt="">
+            <img src="img/sisupar/LTR_9645.JPG" alt="">
+            <img src="img/sisupar/LTR_9693.JPG" alt="">
+          </div>
+        </div>
+        <button class="nav prev" onclick="moveSlide(this, -1)">‹</button>
+        <button class="nav next" onclick="moveSlide(this, 1)">›</button>
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <div class="gallery-date">29 November 2024</div>
+            <div class="gallery-event">Sosialisasi Aplikasi Siuspar - Kemenparekraf</div>
+            <div class="gallery-place">📍 Tangerang, Banten</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- CARD 5 -->
+      <div class="gallery-card">
+        <div class="gallery-slider">
+          <div class="slide-track">
+            <img src="img/simtendik/IMG-20241112-WA0025.jpg" alt="">
+
+          </div>
+        </div>
+        <button class="nav prev" onclick="moveSlide(this, -1)">‹</button>
+        <button class="nav next" onclick="moveSlide(this, 1)">›</button>
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <div class="gallery-date">13 November 2024</div>
+            <div class="gallery-event">Sosialisasi Aplikasi SIMTENDIK - Kemendikdasmen</div>
+            <div class="gallery-place">📍 Makassar, Sulawesi Selatan</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="gallery-card">
+        <div class="gallery-slider">
+          <div class="slide-track">
+            <img src="img/mamuju/IMG-20240813-WA0046.jpg" alt="">
+            <img src="img/mamuju/IMG-20240812-WA0058.jpg" alt="">
+            <img src="img/mamuju/IMG-20240812-WA0066.jpg" alt="">
+            <img src="img/mamuju/IMG-20240813-WA0047.jpg" alt="">
+            <img src="img/mamuju/IMG-20240813-WA0064.jpg" alt="">
+            <img src="img/mamuju/IMG-20240813-WA0120.jpg" alt="">
+          </div>
+        </div>
+        <button class="nav prev" onclick="moveSlide(this, -1)">‹</button>
+        <button class="nav next" onclick="moveSlide(this, 1)">›</button>
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <div class="gallery-date">13 Agustus 2024</div>
+            <div class="gallery-event">Sosialisasi Aplikasi JF Formasi - Kemendikdasmen</div>
+            <div class="gallery-place">📍 Mamuju, Sulawesi Barat</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="gallery-card">
+        <div class="gallery-slider">
+          <div class="slide-track">
+            <img src="img/balikpapan/IMG_0479.jpg" alt="">
+            <img src="img/balikpapan/IMG_0525.jpg" alt="">
+            <img src="img/balikpapan/IMG_0482.jpg" alt="">
+            <img src="img/balikpapan/IMG_0500.jpg" alt="">
+            <img src="img/balikpapan/IMG_0489.jpg" alt="">
+          </div>
+        </div>
+
+        <button class="nav prev" onclick="moveSlide(this, -1)">‹</button>
+        <button class="nav next" onclick="moveSlide(this, 1)">›</button>
+
+
+
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <div class="gallery-date">26 Juli 2024</div>
+            <div class="gallery-event">Sosialisasi Aplikasi JF Formasi - Kemendikdasmen</div>
+            <div class="gallery-place">📍 Balikpapan, Kalimantan Timur</div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- CARD 1 -->
+      <div class="gallery-card">
+
+        <div class="gallery-slider">
+
+          <div class="slide-track">
+            <img src="img/sikerma/DSC00638.jpg" alt="">
+            <img src="img/sikerma/DSC00612.jpg" alt="">
+            <img src="img/sikerma/DSC00643.jpg" alt="">
+            <img src="img/sikerma/DSC00627.jpg" alt="">
+            <img src="img/sikerma/DSC00659.jpg" alt="">
+            <img src="img/sikerma/DSC00555.jpg" alt="">
+            <img src="img/sikerma/DSC00593.jpg" alt="">
+            <img src="img/sikerma/DSC00598.jpg" alt="">
+          </div>
+
+        </div>
+
+        <button class="nav prev" onclick="moveSlide(this, -1)">‹</button>
+        <button class="nav next" onclick="moveSlide(this, 1)">›</button>
+
+
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <div class="gallery-date">1 Desember 2023</div>
+            <div class="gallery-event">Sosialisasi Aplikasi Sikerma - Kemendikdasmen</div>
+            <div class="gallery-place">📍 Batam, Kepulauan Riau</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
   <!-- CONTACT -->
   <section id="contact">
     <div class="contact-wrapper">
@@ -2346,6 +2965,8 @@
       </a>
     </div>
   </section>
+
+
 
   <footer>
     <div class="footer-inner">
@@ -2414,6 +3035,27 @@
   </footer>
 
   <script>
+    // ── Gallery Reveal ──
+    const galleryObs = new IntersectionObserver(entries => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 120);
+      });
+    }, {
+      threshold: 0.1
+    });
+    document.querySelectorAll('.gallery-card').forEach(el => galleryObs.observe(el));
+
+    // ── Cert Reveal ──
+    const certObs = new IntersectionObserver(entries => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 80);
+      });
+    }, {
+      threshold: 0.1
+    });
+    document.querySelectorAll('.cert-card').forEach(el => certObs.observe(el));
+
+
     document.addEventListener('DOMContentLoaded', function () {
       const totalProjects = document.querySelectorAll('.project-card').length;
       document.getElementById('projectCount').innerHTML =
@@ -2550,6 +3192,26 @@
         a.style.color = a.getAttribute('href') === '#' + current ? 'var(--text-primary)' : '';
       });
     });
+
+
+
+    function moveSlide(btn, direction) {
+      const card = btn.closest('.gallery-card');
+      const track = card.querySelector('.slide-track');
+      const images = track.querySelectorAll('img');
+
+      let index = card.dataset.index || 0;
+      index = parseInt(index);
+
+      index += direction;
+
+      if (index < 0) index = images.length - 1;
+      if (index >= images.length) index = 0;
+
+      card.dataset.index = index;
+
+      track.style.transform = `translateX(-${index * 100}%)`;
+    }
   </script>
 </body>
 
