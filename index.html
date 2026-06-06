@@ -1091,188 +1091,431 @@
     <h2 class="section-title">What I've <span>Built</span></h2>
     <div class="section-divider"></div>
 
+    <div class="project-total-banner">
+      <div class="total-big">25<span>+</span></div>
+      <div class="total-text">
+        <span class="total-title">Projects Completed</span>
+        <span class="total-sub">across government, enterprise &amp; academia</span>
+      </div>
+      <div class="total-dots">
+        <div class="total-dot"></div>
+        <div class="total-dot"></div>
+        <div class="total-dot"></div>
+      </div>
+    </div>
+
     <div class="projects-filter">
       <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="web">Web App</button>
-      <button class="filter-btn" data-filter="api">API / Backend</button>
-      <button class="filter-btn" data-filter="mobile">Mobile</button>
-      <button class="filter-btn" data-filter="tool">Tools</button>
+      <button class="filter-btn" data-filter="government">Government</button>
+      <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+      <button class="filter-btn" data-filter="sports">Sports</button>
+      <button class="filter-btn" data-filter="company">Company</button>
+      <button class="filter-btn" data-filter="academic">Academic</button>
     </div>
 
     <div class="projects-grid" id="projectsGrid">
 
-      <div class="project-card" data-category="web">
+      <div class="project-card" data-category="government">
         <div class="project-top">
-          <div class="project-icon">🛒</div>
-          <div class="project-links">
-            <a href="https://github.com/satriabuana" class="project-link" title="GitHub" target="_blank">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <div class="project-icon">🎓</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path
                   d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-              </svg>
-            </a>
-            <a href="#" class="project-link" title="Live Demo" target="_blank">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                <polyline points="15 3 21 3 21 9" />
-                <line x1="10" y1="14" x2="21" y2="3" /></svg>
-            </a>
-          </div>
+                </svg></a></div>
         </div>
-        <div class="project-title">E-Commerce Platform</div>
-        <div class="project-desc">
-          A full-featured e-commerce web app with product management, shopping cart, payment gateway integration
-          (Midtrans), and real-time order tracking. Built with Laravel + React.js.
-        </div>
-        <div class="project-tags">
-          <span class="project-tag">Laravel</span>
-          <span class="project-tag">React.js</span>
-          <span class="project-tag">MySQL</span>
-          <span class="project-tag">Midtrans</span>
-        </div>
+        <div class="project-title">Kredensial Mikro Guru SMK (KMG SMK)</div>
+        <div class="project-client">Kemendikdasmen</div>
+        <div class="project-desc">Web application for managing micro-credentials for vocational school teachers under
+          the Ministry of Primary and Secondary Education (Kemendikdasmen).</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Kemendikdasmen</span></div>
       </div>
-
-      <div class="project-card" data-category="api">
+      <div class="project-card" data-category="government">
         <div class="project-top">
-          <div class="project-icon">🔐</div>
-          <div class="project-links">
-            <a href="https://github.com/satriabuana" class="project-link" title="GitHub" target="_blank">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <div class="project-icon">📋</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path
                   d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-              </svg>
-            </a>
-          </div>
+                </svg></a></div>
         </div>
-        <div class="project-title">Auth Microservice API</div>
-        <div class="project-desc">
-          A secure authentication microservice supporting JWT, OAuth2 (Google, GitHub), refresh tokens, and role-based
-          access control. Includes rate limiting and audit logging.
-        </div>
-        <div class="project-tags">
-          <span class="project-tag">Node.js</span>
-          <span class="project-tag">Express</span>
-          <span class="project-tag">JWT</span>
-          <span class="project-tag">PostgreSQL</span>
-          <span class="project-tag">Docker</span>
-        </div>
+        <div class="project-title">SIPKA GURU Kemendikdasmen</div>
+        <div class="project-client">Kemendikdasmen</div>
+        <div class="project-desc">Information system for managing academic qualification fulfillment (S1/D4) for
+          teachers — a presidential priority program under the Ministry of Primary and Secondary Education.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Kemendikdasmen</span></div>
       </div>
-
-      <div class="project-card" data-category="web">
+      <div class="project-card" data-category="government">
+        <div class="project-top">
+          <div class="project-icon">🏫</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg></a></div>
+        </div>
+        <div class="project-title">Sistem Aplikasi BBGP Jabar — SIMADDU</div>
+        <div class="project-client">BBGP Jawa Barat</div>
+        <div class="project-desc">Management information system for BBGP (Balai Besar Guru Penggerak) West Java,
+          covering internal operational and administrative workflows.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Bootstrap</span></div>
+      </div>
+      <div class="project-card" data-category="government">
+        <div class="project-top">
+          <div class="project-icon">☁️</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg></a></div>
+        </div>
+        <div class="project-title">Sistem Informasi Layanan Penyedia Komputasi Awan — Komdigi</div>
+        <div class="project-client">Komdigi</div>
+        <div class="project-desc">Information system for managing cloud computing service provider applications under
+          the Ministry of Communication and Digital Affairs of Indonesia.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Komdigi</span></div>
+      </div>
+      <div class="project-card" data-category="government">
+        <div class="project-top">
+          <div class="project-icon">🛡️</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg></a></div>
+        </div>
+        <div class="project-title">Sistem Informasi Perlindungan GTK — Kemendikdasmen</div>
+        <div class="project-client">Kemendikdasmen</div>
+        <div class="project-desc">Information system for managing complaints and protection reports from teachers and
+          education staff (PTK) under Kemendikdasmen.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Kemendikdasmen</span></div>
+      </div>
+      <div class="project-card" data-category="government">
+        <div class="project-top">
+          <div class="project-icon">🏛️</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg></a></div>
+        </div>
+        <div class="project-title">Website JF GTK Formasi — Kemdikbudristek</div>
+        <div class="project-client">Kemdikbudristek</div>
+        <div class="project-desc">Information system for managing functional positions (JF) including JF Guru, JF
+          Pengawas Sekolah, JF Pamong Belajar, and JF Penilik under Kemdikbudristek.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Kemdikbudristek</span></div>
+      </div>
+      <div class="project-card" data-category="government">
+        <div class="project-top">
+          <div class="project-icon">🏺</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg></a></div>
+        </div>
+        <div class="project-title">Website SIAPI — Unit Museum dan Cagar Budaya Kemdikbudristek</div>
+        <div class="project-client">Kemdikbudristek</div>
+        <div class="project-desc">Web-based audit management system for the Museum and Cultural Heritage unit under the
+          Ministry of Education, Culture, Research, and Technology.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Kemdikbudristek</span></div>
+      </div>
+      <div class="project-card" data-category="government">
+        <div class="project-top">
+          <div class="project-icon">🌿</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg></a></div>
+        </div>
+        <div class="project-title">SIUSPAR — Sertifikasi Usaha Pariwisata Kemenparekraf</div>
+        <div class="project-client">Kemenparekraf</div>
+        <div class="project-desc">Application for managing standardization and certification of tourism businesses,
+          aimed at improving service quality and competitiveness of Indonesia's tourism industry.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Kemenparekraf</span></div>
+      </div>
+      <div class="project-card" data-category="government">
+        <div class="project-top">
+          <div class="project-icon">📚</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg></a></div>
+        </div>
+        <div class="project-title">Website Bank Soal Rumah Belajar — Pusdatin Kemdikbudristek</div>
+        <div class="project-client">Kemdikbudristek</div>
+        <div class="project-desc">Question bank platform under Rumah Belajar Pusdatin Kemdikbudristek, providing
+          educational resources for teachers and students.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Kemdikbudristek</span></div>
+      </div>
+      <div class="project-card" data-category="government">
+        <div class="project-top">
+          <div class="project-icon">🎓</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg></a></div>
+        </div>
+        <div class="project-title">Website KSPSTK — Kemdikbudristek</div>
+        <div class="project-client">Kemdikbudristek</div>
+        <div class="project-desc">Official website of the Directorate of School Principals, School Supervisors, and
+          Education Personnel under Kemdikbudristek.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Kemdikbudristek</span></div>
+      </div>
+      <div class="project-card" data-category="government">
+        <div class="project-top">
+          <div class="project-icon">🤝</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg></a></div>
+        </div>
+        <div class="project-title">Website Konsorsium Pendidikan Daerah (KPD) — Kemdikbudristek</div>
+        <div class="project-client">Kemdikbudristek</div>
+        <div class="project-desc">Application managing regional education consortiums across Indonesia under
+          Kemdikbudristek.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Kemdikbudristek</span></div>
+      </div>
+      <div class="project-card" data-category="government">
+        <div class="project-top">
+          <div class="project-icon">📢</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg></a></div>
+        </div>
+        <div class="project-title">Website Program PKK — Direktorat Kursus dan Pelatihan Kemdikbudristek</div>
+        <div class="project-client">Kemdikbudristek</div>
+        <div class="project-desc">Government assistance program website for Pendidikan Kecakapan Kerja (PKK) under the
+          Directorate of Courses and Training, Kemdikbudristek.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Kemdikbudristek</span></div>
+      </div>
+      <div class="project-card" data-category="government">
+        <div class="project-top">
+          <div class="project-icon">🏙️</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg></a></div>
+        </div>
+        <div class="project-title">Website SIM BANGUNAN — Pemkot Surakarta</div>
+        <div class="project-client">Pemkot Surakarta</div>
+        <div class="project-desc">Building information management system for the Surakarta city government, supporting
+          permit and infrastructure data management.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Pemkot Surakarta</span></div>
+      </div>
+      <div class="project-card" data-category="government">
         <div class="project-top">
           <div class="project-icon">📊</div>
-          <div class="project-links">
-            <a href="https://github.com/satriabuana" class="project-link" title="GitHub" target="_blank">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path
                   d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-              </svg>
-            </a>
-            <a href="#" class="project-link" title="Live Demo" target="_blank">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                <polyline points="15 3 21 3 21 9" />
-                <line x1="10" y1="14" x2="21" y2="3" /></svg>
-            </a>
-          </div>
+                </svg></a></div>
         </div>
-        <div class="project-title">School Management System</div>
-        <div class="project-desc">
-          A comprehensive school management system with student records, grade tracking, attendance, scheduling, and
-          parent portal. Used by 500+ students.
-        </div>
-        <div class="project-tags">
-          <span class="project-tag">Laravel</span>
-          <span class="project-tag">Bootstrap</span>
-          <span class="project-tag">MySQL</span>
-          <span class="project-tag">Chart.js</span>
-        </div>
+        <div class="project-title">Website SPARING PGP — Instrumen Pemantauan Kolaborasi KSPS</div>
+        <div class="project-client">Kemdikbudristek</div>
+        <div class="project-desc">Application for monitoring and managing collaboration instruments for KSPS under
+          Kemdikbudristek.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Kemdikbudristek</span></div>
       </div>
-
-      <div class="project-card" data-category="mobile">
+      <div class="project-card" data-category="sports">
         <div class="project-top">
-          <div class="project-icon">📱</div>
-          <div class="project-links">
-            <a href="https://github.com/satriabuana" class="project-link" title="GitHub" target="_blank">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <div class="project-icon">♿</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path
                   d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-              </svg>
-            </a>
-          </div>
+                </svg></a></div>
         </div>
-        <div class="project-title">Task Manager App</div>
-        <div class="project-desc">
-          A cross-platform mobile task management app with categories, deadlines, reminders, and sync across devices via
-          REST API. Built with React Native.
-        </div>
-        <div class="project-tags">
-          <span class="project-tag">React Native</span>
-          <span class="project-tag">Expo</span>
-          <span class="project-tag">Node.js</span>
-          <span class="project-tag">MongoDB</span>
-        </div>
+        <div class="project-title">Website Game Legacy NPCI Indonesia</div>
+        <div class="project-client">NPCI Indonesia</div>
+        <div class="project-desc">Athlete management and transfer system at the national level for National Paralympic
+          Committee Indonesia (NPCI), used for official paralympic athlete data management.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">NPCI</span></div>
       </div>
-
-      <div class="project-card" data-category="tool">
+      <div class="project-card" data-category="sports">
         <div class="project-top">
-          <div class="project-icon">🤖</div>
-          <div class="project-links">
-            <a href="https://github.com/satriabuana" class="project-link" title="GitHub" target="_blank">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <div class="project-icon">🏅</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path
                   d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-              </svg>
-            </a>
-          </div>
+                </svg></a></div>
         </div>
-        <div class="project-title">CLI Dev Utilities</div>
-        <div class="project-desc">
-          A collection of command-line developer tools including a code scaffolder, environment validator, and git
-          workflow automator. Published on npm.
-        </div>
-        <div class="project-tags">
-          <span class="project-tag">Node.js</span>
-          <span class="project-tag">CLI</span>
-          <span class="project-tag">npm</span>
-          <span class="project-tag">Shell</span>
-        </div>
+        <div class="project-title">Website PEPARNAS 2024</div>
+        <div class="project-client">NPCI Indonesia</div>
+        <div class="project-desc">Official web application for the National Paralympic Week (PEPARNAS) 2024 held in
+          Solo, covering event management and information.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">NPCI</span></div>
       </div>
-
-      <div class="project-card" data-category="api">
+      <div class="project-card" data-category="ecommerce">
+        <div class="project-top">
+          <div class="project-icon">🎁</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg></a></div>
+        </div>
+        <div class="project-title">Website E-Commerce SMENZAGIFT — SMKN 1 Kebumen</div>
+        <div class="project-client">SMKN 1 Kebumen</div>
+        <div class="project-desc">E-commerce platform for selling products from SMK Negeri 1 Kebumen, enabling students
+          to market their school-made products online.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Bootstrap</span></div>
+      </div>
+      <div class="project-card" data-category="ecommerce">
+        <div class="project-top">
+          <div class="project-icon">🛒</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg></a></div>
+        </div>
+        <div class="project-title">Website E-Commerce SMKN 2 Kediri</div>
+        <div class="project-client">SMKN 2 Kediri</div>
+        <div class="project-desc">E-commerce application for selling products produced by SMKN 2 Kediri students.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Bootstrap</span></div>
+      </div>
+      <div class="project-card" data-category="ecommerce">
+        <div class="project-top">
+          <div class="project-icon">🏥</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg></a></div>
+        </div>
+        <div class="project-title">Website E-Commerce Webinar RS Dr Oen Solo Baru</div>
+        <div class="project-client">RS Dr Oen Solo Baru</div>
+        <div class="project-desc">Webinar sales platform for RS Dr Oen Solo Baru, managing registration and payment for
+          hospital-organized webinar events.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Midtrans</span></div>
+      </div>
+      <div class="project-card" data-category="company">
+        <div class="project-top">
+          <div class="project-icon">🌱</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg></a></div>
+        </div>
+        <div class="project-title">Website NGABEI GARDEN — PT Phicos Group</div>
+        <div class="project-client">PT Phicos Group</div>
+        <div class="project-desc">Internal management application for seedlings, plants, and land area management for PT
+          Phicos Group's Ngabei Garden project.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Bootstrap</span></div>
+      </div>
+      <div class="project-card" data-category="company">
+        <div class="project-top">
+          <div class="project-icon">🏢</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg></a></div>
+        </div>
+        <div class="project-title">Sistem Informasi PT Era Permata Sejahtera</div>
+        <div class="project-client">PT Era Permata Sejahtera</div>
+        <div class="project-desc">Business management information system for PT Era Permata Sejahtera, covering
+          operational and administrative business processes.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Bootstrap</span></div>
+      </div>
+      <div class="project-card" data-category="company">
+        <div class="project-top">
+          <div class="project-icon">💼</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg></a></div>
+        </div>
+        <div class="project-title">Sistem Informasi Manajemen Transaksi CV. Lima Jaya Milenial Konsultan</div>
+        <div class="project-client">CV. Lima Jaya Milenial</div>
+        <div class="project-desc">Information system for managing certificate and licensing transactions owned by the
+          client.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Bootstrap</span></div>
+      </div>
+      <div class="project-card" data-category="company">
         <div class="project-top">
           <div class="project-icon">🌐</div>
-          <div class="project-links">
-            <a href="https://github.com/satriabuana" class="project-link" title="GitHub" target="_blank">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path
                   d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-              </svg>
-            </a>
-            <a href="#" class="project-link" title="Live Demo" target="_blank">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                <polyline points="15 3 21 3 21 9" />
-                <line x1="10" y1="14" x2="21" y2="3" /></svg>
-            </a>
-          </div>
+                </svg></a></div>
         </div>
-        <div class="project-title">Weather Dashboard API</div>
-        <div class="project-desc">
-          A weather data aggregator that pulls from multiple public APIs, caches results with Redis, and serves clean
-          JSON endpoints. Handles 10k+ daily requests.
-        </div>
-        <div class="project-tags">
-          <span class="project-tag">Python</span>
-          <span class="project-tag">FastAPI</span>
-          <span class="project-tag">Redis</span>
-          <span class="project-tag">Docker</span>
-        </div>
+        <div class="project-title">Website Portal AIBI — Asosiasi Inkubator Bisnis Indonesia</div>
+        <div class="project-client">AIBI</div>
+        <div class="project-desc">Official website portal for the Indonesian Business Incubator Association (AIBI),
+          serving as the main information and membership hub.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Bootstrap</span></div>
       </div>
-
+      <div class="project-card" data-category="company">
+        <div class="project-top">
+          <div class="project-icon">🏢</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg></a></div>
+        </div>
+        <div class="project-title">Website PT Artha Jaya</div>
+        <div class="project-client">PT Artha Jaya</div>
+        <div class="project-desc">Company profile website for PT Artha Jaya, presenting the company's services,
+          portfolio, and contact information.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Bootstrap</span></div>
+      </div>
+      <div class="project-card" data-category="academic">
+        <div class="project-top">
+          <div class="project-icon">📦</div>
+          <div class="project-links"><a href="#" class="project-link" title="GitHub" target="_blank"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg></a></div>
+        </div>
+        <div class="project-title">SI PINJAM — Sistem Informasi Peminjaman Sarana dan Prasarana Sekolah Vokasi UNS</div>
+        <div class="project-client">Sekolah Vokasi UNS</div>
+        <div class="project-desc">Web-based information system for managing the borrowing of facilities and
+          infrastructure — including rooms, equipment, and vehicles — within Sekolah Vokasi UNS.</div>
+        <div class="project-tags"><span class="project-tag">Laravel</span><span class="project-tag">MySQL</span><span
+            class="project-tag">Bootstrap</span></div>
+      </div>
     </div>
   </section>
-
   <!-- CONTACT -->
   <section id="contact">
     <div class="contact-wrapper">
